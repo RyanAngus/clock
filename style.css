@@ -18,7 +18,7 @@ h1 {
 .clock {
   width: 20rem;
   height: 20rem;
-  border: 10px solid white;
+  border: 10px solid #fff;
   border-radius: 50%;
   margin: 50px auto;
   position: relative;
@@ -39,7 +39,7 @@ h1 {
  
 .hand {
   width: 50%;
-  height: 6px;
+  height: 4px;
   border-radius: 12px;
   background: rgb(172, 249, 255);
   position: absolute;
@@ -50,14 +50,29 @@ h1 {
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
+.sec-hand {
+  width: 50%;
+  height: 2px;
+  border-radius: 12px;
+  background: rgb(244, 250, 163);
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+
 .short-hand {
-  width: 47%;
+  width: 50%;
   height: 6px;
+  opacity: 95%;
   border-radius: 12px;
   background: rgb(172, 249, 255);
   position: absolute;
   top: 50%;
-  transform-origin: 103%;
+  transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
